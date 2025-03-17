@@ -13,12 +13,14 @@
         />
         <link rel="stylesheet" href="/src/styles/style.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+        <script></script>
     </head>
     <body>
         <header class="pdg">
             <h1>Furni</h1>
             <nav>
-                <ul class="menu-desktop links">
+                <ul class="mrnu-desktop links">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Sobre Nós</a></li>
                     <li><a href="#">Shop</a></li>
@@ -66,94 +68,40 @@
         <!--  -->
         <main class="container">
             <div class="main left">
-                <h1 class="titulo">SOBRE NÓS</h1>
+                <h1 class="titulo">MEU CARRINHO</h1>
             </div>
         </main>
 
-        <h1 class="titulo title-parent">Nossa Companhia</h1>
-        <div class="parent">
-            <div class="div1 box">
-                <div>
-                    <h2>500 mil</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Perspiciatis voluptates.
-                    </p>
-                </div>
-            </div>
-            <div class="div2 box"></div>
-            <div class="div3 box"></div>
-            <div class="div4 box"></div>
-            <div class="div5 box">
-                <div>
-                    <h2>1M</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Perspiciatis voluptates.
-                    </p>
+        <!--  -->
+
+        <div class="cart-modal">
+            <div class="tabela">
+                <h1 class="titulo">Meu Carrinho</h1>
+                <table>
+                    <thead class="cabecalho">
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Total</th>
+                            <th>Remover</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div class="cart-totals">
+                    <h2>VALOR TOTAL</h2>
+                    <div>
+                        <h4>Total:</h4>
+                        <span id="total-items">R$00.00</span>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <section class="about-section">
-            <div class="about-section-description">
-                <h1>Por que nos escolher?</h1>
-                <p>
-                    Donec vitae odio quis nisl dapibus malesuada. Nullam ac
-                    aliquet velit. Aliquam vulputate velit imperdiet dolor
-                    tempor tristique.
-                </p>
-                <div class="about-section-items">
-                    <div class="row">
-                        <div>
-                            <span class="icon"
-                                ><i class="fa-solid fa-truck"></i
-                            ></span>
-                            <h5>Frete rápido e grátis</h5>
-                            <p>
-                                Donec vitae odio quis nisl dapibus malesuada.
-                                Nullam ac aliquet velit. Aliquam vulputate.
-                            </p>
-                        </div>
-                        <div>
-                            <span class="icon"
-                                ><i class="fa-solid fa-headset"></i
-                            ></span>
-                            <h5>Suporte eficiente</h5>
-                            <p>
-                                Donec vitae odio quis nisl dapibus malesuada.
-                                Nullam ac aliquet velit. Aliquam vulputate.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div>
-                            <span class="icon"
-                                ><i class="fa-solid fa-bag-shopping"></i
-                            ></span>
-                            <h5>Fácil para comprar</h5>
-                            <p>
-                                Donec vitae odio quis nisl dapibus malesuada.
-                                Nullam ac aliquet velit. Aliquam vulputate.
-                            </p>
-                        </div>
-                        <div>
-                            <span class="icon"
-                                ><i class="fa-solid fa-right-left"></i
-                            ></span>
-                            <h5>Devoluções e trocas</h5>
-                            <p>
-                                Donec vitae odio quis nisl dapibus malesuada.
-                                Nullam ac aliquet velit. Aliquam vulputate.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="about-section-img">
-                <img src="/src/assets/aboutusIMG.jpg" alt="" />
-            </div>
-        </section>
+        <!--  -->
+        <!--  -->
+        <!--  -->
 
         <footer class="footer">
             <div class="footer-container">
@@ -187,6 +135,7 @@
                 <p>&copy; 2025 Minha Empresa. Todos os direitos reservados.</p>
             </div>
         </footer>
+
         <script src="/src/script/script.js"></script>
         <script src="/src/script/navigation.js"></script>
     </body>

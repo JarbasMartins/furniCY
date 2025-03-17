@@ -12,18 +12,18 @@
             referrerpolicy="no-referrer"
         />
         <link rel="stylesheet" href="src/styles/style.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     </head>
     <body>
         <!-- HEADER E HERO SECTTION -->
         <header class="pdg">
             <h1>Furni</h1>
             <nav>
-                <ul class="links">
+                <ul class="menu-desktop links">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Sobre Nós</a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Blog</a></li>
                     <li><a href="#">Contatos</a></li>
                 </ul>
                 <ul class="icons">
@@ -31,14 +31,43 @@
                         <a href=""><i class="fa-solid fa-user"></i></a>
                     </li>
                     <li>
-                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="src/pages/car.html"
+                            ><i class="fa-solid fa-cart-shopping"></i
+                        ></a>
                     </li>
                     <a href="#">
-                        <i class="fa-solid fa-bars mobile-icon"></i
+                        <i
+                            class="fa-solid fa-bars mobile-icon"
+                            onclick="menuMobileShow()"
+                        ></i
                     ></a>
                 </ul>
+
+                <!-- MENU MOBILE -->
+                <section class="menu-mobile-section">
+                    <nav>
+                        <ul class="menu-mobile-nav links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Sobre Nós</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Serviços</a></li>
+                            <li><a href="#">Contatos</a></li>
+                            <button
+                                class="menu-mobile-close"
+                                onclick="menuMobileClose()"
+                            >
+                                FECHAR
+                            </button>
+                        </ul>
+                    </nav>
+                </section>
+
+                <!--  -->
             </nav>
         </header>
+        <!--  -->
+
+        <!--  -->
         <main class="container">
             <div class="main left">
                 <h1 class="titulo">
@@ -53,9 +82,9 @@
                 <button class="main-btn">SHOP NOW</button>
                 <button class="main-btn2">Explore</button>
             </div>
-            <div class="main right">
+            <!-- <div class="main right">
                 <img src="src/assets/hero-img.png" alt"" />
-            </div>
+            </div> -->
         </main>
         <!-- FIM HEADER E HERO SECTTION -->
 
@@ -72,7 +101,7 @@
             </div>
             <div class="products">
                 <div class="product">
-                    <img src="src/assets/productsection1.png" alt="" />
+                    <img src="/src/assets/product1.png" alt="" />
                     <button>
                         <i class="fa-solid fa-plus product-adress"></i>
                     </button>
@@ -80,7 +109,7 @@
                     <p>R$50.00</p>
                 </div>
                 <div class="product">
-                    <img src="src/assets/productsection2.png" alt="" />
+                    <img src="/src/assets/product2.png" alt="" />
                     <button>
                         <i class="fa-solid fa-plus product-adress"></i>
                     </button>
@@ -88,19 +117,23 @@
                     <p>R$78.00</p>
                 </div>
                 <div class="product">
-                    <img src="src/assets/productsection2.png" alt="" />
+                    <img
+                        src="/src//assets//product3.png"
+                        alt=""
+                        class="resign"
+                    />
                     <button>
                         <i class="fa-solid fa-plus product-adress"></i>
                     </button>
-                    <h3>Kruzo Aero Chair</h3>
-                    <p>R$78.00</p>
+                    <h3>Symp Stuff Chair</h3>
+                    <p>R$90.00</p>
                 </div>
             </div>
         </section>
         <!-- FIM PRODUCT SECTION -->
 
         <!-- ABOUT US SECTION -->
-        <section class="about-section">
+        <section class="about-section js-scroll">
             <div class="about-section-description">
                 <h1>Por que nos escolher?</h1>
                 <p>
@@ -162,7 +195,7 @@
         <!-- FIM ABOUT US SECTION -->
 
         <!-- COMMENTS SECTION -->
-        <section class="comment-section">
+        <!-- <section class="comment-section">
             <h1>Comentários</h1>
             <div class="comment-section-items">
                 <div class="item ativo">
@@ -208,7 +241,41 @@
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
-        </section>
+        </section> -->
+        <!-- FIM COMMENT SECTION -->
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Sobre Nós</h3>
+                    <p>
+                        Somos uma empresa dedicada a oferecer soluções
+                        inovadoras e de alta qualidade para nossos clientes.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Portfólio</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <p>Endereço: Rua Jõao Albino, 115</p>
+                    <p>Telefone: (99) 99999-9999</p>
+                    <p>Email: furni@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Minha Empresa. Todos os direitos reservados.</p>
+            </div>
+        </footer>
         <script src="src/script/script.js"></script>
         <script src="/src/script/navigation.js"></script>
     </body>

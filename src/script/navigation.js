@@ -25,6 +25,7 @@ function navigateTo(page) {
         services: "/src/pages/services.html",
         blog: "/src/pages/blog.html",
         contact: "/src/pages/contact.html",
+        car: "/src/pages/car.html",
     };
 
     // Redireciona para a página escolhida
@@ -52,10 +53,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 navigateTo("shop");
             } else if (linkText.includes("serviços")) {
                 navigateTo("services");
-            } else if (linkText.includes("blog")) {
-                navigateTo("blog");
             } else if (linkText.includes("contatos")) {
                 navigateTo("contact");
+            } else if (linkText.includes("carrinho")) {
+                navigateTo("car");
             }
         });
     });

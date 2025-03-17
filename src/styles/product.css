@@ -41,6 +41,18 @@
     justify-content: center;
     align-items: end;
     gap: 20px;
+    user-select: none;
+}
+
+.products.second-part {
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.products-title {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 80px;
 }
 
 .product {
@@ -59,11 +71,15 @@
 
 .product img {
     max-width: 250px;
-    max-width: 250px;
+    max-height: auto;
     z-index: 2;
     transition: 500ms ease;
     margin-bottom: 10px;
     user-select: none;
+}
+
+.resign {
+    transform: translateY(40px);
 }
 
 .product:hover img {
@@ -72,7 +88,7 @@
 
 .product::before {
     content: "";
-    width: 250px;
+    width: 265px;
     height: 0;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.101);
@@ -116,12 +132,90 @@
     }
 }
 
-@media (width < 768px) {
+/* ...existing code... */
+
+@media (max-width: 1200px) {
+    .product-section {
+        padding: 20px 5%;
+    }
+
+    .products {
+        gap: 15px;
+    }
+
+    .product img {
+        max-width: 200px;
+    }
+
+    .product::before {
+        width: 215px;
+    }
+}
+
+@media (max-width: 992px) {
+    .product-section-description h1 {
+        font-size: 1.8rem;
+    }
+
+    .products.second-part {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
     .product-section {
         flex-direction: column;
+        height: auto;
+        gap: 40px;
+        text-align: center;
     }
 
     .products {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .product-section-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-section-description p {
+        max-width: 80%;
+    }
+
+    .products.second-part {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-section {
+        padding: 20px 3%;
+    }
+
+    .product img {
+        max-width: 180px;
+    }
+
+    .product::before {
+        width: 195px;
+    }
+
+    .product-section-description h1 {
+        font-size: 1.5rem;
+    }
+
+    .product-section-description button {
+        padding: 12px 25px;
+    }
+
+    .product-section-description p {
+        max-width: 95%;
+    }
+
+    .product:hover::before {
+        height: 250px;
     }
 }
