@@ -208,13 +208,9 @@ const menuMobile = document.querySelector(".menu-mobile-section");
 const menuMobClose = document.querySelector(".menu-mobile-close");
 
 function menuMobileShow() {
-    menuMobBtn.addEventListener("click", () => {
-        menuMobile.style.transform = "translateX(0)";
-    });
+    menuMobile.style.transform = "translateX(0)";
 }
 
 function menuMobileClose() {
-    menuMobClose.addEventListener("click", () => {
-        menuMobile.style.transform = "translateX(100%)";
-    });
+    menuMobile.style.transform = "translateX(100%)";
 }
