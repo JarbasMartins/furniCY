@@ -4,11 +4,12 @@
 }
 
 .tabela {
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     min-height: 90vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .tabela .titulo {
@@ -17,7 +18,7 @@
 table {
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: #ffffff;
     color: #000;
     border-collapse: collapse;
 }
@@ -53,7 +54,7 @@ th {
 .btn-minus,
 .btn-plus {
     padding: 5px 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     background-color: #fff;
     cursor: pointer;
     border-radius: 100%;
@@ -103,18 +104,13 @@ th {
 /* Responsividade */
 @media (max-width: 992px) {
     .tabela {
-        width: 95%;
+        width: 100%;
         padding: 10px;
     }
 
     th,
     td {
         font-size: 0.9em;
-    }
-
-    .product-image {
-        width: 80px;
-        height: 80px;
     }
 }
 
@@ -126,6 +122,10 @@ th {
     table {
         display: block;
         overflow-x: auto;
+    }
+
+    th {
+        width: 100vw;
     }
 
     .actions {
@@ -151,9 +151,8 @@ th {
         font-size: 0.8em;
     }
 
-    .product-image {
-        width: 60px;
-        height: 60px;
+    th {
+        width: 100vw;
     }
 
     .quantity-controls {
@@ -164,6 +163,7 @@ th {
     .btn-minus,
     .btn-plus {
         padding: 2px;
+        border: none;
     }
 
     .quantity-input {
@@ -175,7 +175,7 @@ th {
     }
 
     .cart-totals div {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
     }
 }
@@ -189,6 +189,10 @@ th {
     td {
         padding: 5px;
         font-size: 0.75em;
+    }
+
+    th {
+        width: 100vw;
     }
 
     .actions button {

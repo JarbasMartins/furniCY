@@ -1,7 +1,7 @@
 .product-section {
     padding: 20px 10% 20px;
     width: 100%;
-    height: 85%;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +46,6 @@
 
 .products.second-part {
     flex-wrap: wrap;
-    padding: 50px;
 }
 
 .products-title {

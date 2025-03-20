@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     const leftItems = document.querySelector(".left");
 
     try {
@@ -214,3 +214,10 @@ function menuMobileShow() {
 function menuMobileClose() {
     menuMobile.style.transform = "translateX(100%)";
 }
+
+const logoSite = document.querySelectorAll(".logo-site");
+logoSite.forEach((logo) => {
+    logo.addEventListener("click", () => {
+        window.location.href = "/index.html";
+    });
+});
