@@ -152,6 +152,12 @@
 }
 
 @media (max-width: 992px) {
+    .product-section {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        margin-top: 50px;
+    }
     .product-section-description h1 {
         font-size: 1.8rem;
     }
@@ -162,13 +168,6 @@
 }
 
 @media (max-width: 768px) {
-    .product-section {
-        flex-direction: column;
-        height: auto;
-        gap: 40px;
-        text-align: center;
-    }
-
     .products {
         flex-direction: column;
         align-items: center;

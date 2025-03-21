@@ -1,6 +1,5 @@
+const leftItems = document.querySelector(".left");
 document.addEventListener("DOMContentLoaded", () => {
-    const leftItems = document.querySelector(".left");
-
     try {
         gsap.set(leftItems, {
             opacity: 0,
@@ -14,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
             ease: "power2.out",
         });
     } catch (error) {
-        console.error("Erro ao executar animação GSAP:", error);
         leftItems?.classList.add("reveal");
     }
 });
@@ -215,9 +213,34 @@ function menuMobileClose() {
     menuMobile.style.transform = "translateX(100%)";
 }
 
+//
+//
+
 const logoSite = document.querySelectorAll(".logo-site");
 logoSite.forEach((logo) => {
     logo.addEventListener("click", () => {
         window.location.href = "/index.html";
     });
+});
+
+//
+//
+
+// USER MODAL
+
+const btnModal = document.querySelector(".btn-modal");
+const modal = document.querySelector(".form-container");
+const overlay = document.querySelector(".overlay");
+const btnUserClose = document.querySelector(".closeUser-modal");
+
+btnModal.addEventListener("click", () => {
+    modal.style.display = "block";
+    overlay.classList.add("active");
+    document.body.style.overflow = "hidden";
+});
+
+btnUserClose.addEventListener("click", () => {
+    modal.style.display = "none";
+    overlay.classList.remove("active");
+    document.body.style.overflow = "scroll";
 });

@@ -22,9 +22,8 @@ function navigateTo(page) {
         home: "/index.html",
         about: "/src/pages/about.html",
         shop: "/src/pages/shop.html",
-        services: "/src/pages/services.html",
-        blog: "/src/pages/blog.html",
-        contact: "/src/pages/contact.html",
+        // services: "/src/pages/services.html",
+        // contact: "/src/pages/contact.html",
         car: "/src/pages/car.html",
     };
 
@@ -51,10 +50,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 navigateTo("about");
             } else if (linkText.includes("shop")) {
                 navigateTo("shop");
-            } else if (linkText.includes("serviços")) {
-                navigateTo("services");
-            } else if (linkText.includes("contatos")) {
-                navigateTo("contact");
+                // } else if (linkText.includes("serviços")) {
+                //     navigateTo("services");
+                // } else if (linkText.includes("contatos")) {
+                //     navigateTo("contact");
             } else if (linkText.includes("carrinho")) {
                 navigateTo("car");
             }

@@ -5,6 +5,7 @@
 @import url("core.css");
 @import url("product.css");
 @import url("car.css");
+@import url("register.css");
 
 * {
     list-style: none;
@@ -213,5 +214,9 @@ svg {
 
     .footer-column {
         margin: 10px 0;
+    }
+
+    .footer-bottom {
+        width: 100%;
     }
 }
