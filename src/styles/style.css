@@ -13,9 +13,10 @@
     padding: 0;
     scroll-behavior: smooth;
     text-decoration: none;
-    outline: none;
     object-fit: center;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 
 a {
@@ -153,8 +154,7 @@ svg {
     transition: transform 0.3s ease;
 
     & ul li {
-        color: #090909;
-        padding: 0.7em 1.7em;
+        padding: 0; /* Removido o padding do li */
         font-size: 18px;
         border-radius: 0.5em;
         background: #e8e8e8;
@@ -163,12 +163,17 @@ svg {
         transition: all 0.3s;
         box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
         margin-top: 40px;
+        width: 100%;
     }
+
     & ul li a {
+        display: block; /* Faz o link ocupar todo o espaço */
         color: #000;
         font-size: 1.2rem;
         font-weight: 400;
-        padding-block: 10px;
+        padding: 0.7em 1.7em; /* Movido o padding do li para o a */
+        width: 100%;
+        height: 100%;
     }
 }
 

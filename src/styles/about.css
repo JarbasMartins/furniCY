@@ -195,7 +195,11 @@
     .about-section {
         flex-direction: column;
         margin-top: 50px;
-        text-align: center;
+        text-align: left;
+    }
+
+    .second-description {
+        padding-inline: 30px;
     }
 
     .about-section-description {

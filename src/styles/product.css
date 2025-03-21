@@ -217,4 +217,8 @@
     .product:hover::before {
         height: 250px;
     }
+
+    .product h3 {
+        margin-top: 5px;
+    }
 }
